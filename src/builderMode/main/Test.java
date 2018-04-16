@@ -18,6 +18,7 @@ public class Test {
         Director director = new Director();
         director.construct(builder1);
         Product product = builder1.getResult();
+        product.show();
     }
 
 }
