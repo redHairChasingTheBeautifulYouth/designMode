@@ -5,7 +5,7 @@ package builderMode;
  */
 public class Director {
 
-    public void onstruct(Builder builder){
+    public void construct(Builder builder){
 
         builder.buildPartA();
         builder.buildPartB();

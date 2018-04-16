@@ -8,6 +8,7 @@ package builderMode;
  */
 
 public class ConcreteBuilder1 extends  Builder{
+
     private Product product = new Product();
 
     @Override
