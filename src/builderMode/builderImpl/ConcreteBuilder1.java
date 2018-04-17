@@ -1,13 +1,16 @@
-package builderMode;
+package builderMode.builderImpl;
 
 /*
- *一句话描述该类作用:
+ *一句话描述该类作用:具体建造者2
  *@Author:
  *LB
  *
  */
 
-public class ConcreteBuilder1 extends  Builder{
+import builderMode.Builder;
+import builderMode.Product;
+
+public class ConcreteBuilder1 extends Builder {
 
     private Product product = new Product();
 
