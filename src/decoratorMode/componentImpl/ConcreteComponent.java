@@ -11,6 +11,6 @@ import decoratorMode.Component;
 public class ConcreteComponent implements Component{
     @Override
     public void operation() {
-        System.out.println("原来类中的功能");
+        System.out.println("原来对象中的功能");
     }
 }

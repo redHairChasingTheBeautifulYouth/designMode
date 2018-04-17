@@ -16,8 +16,11 @@ public class Test {
         ConcreteComponent concreteComponent = new ConcreteComponent();
         ConcreteDecorator_A concreteDecorator_a = new ConcreteDecorator_A();
         ConcreteDecorator_B concreteDecorator_b = new ConcreteDecorator_B();
-        concreteDecorator_a.setComponent(concreteComponent);
+       /* concreteDecorator_a.setComponent(concreteComponent);
         concreteDecorator_b.setComponent(concreteComponent);
-        concreteDecorator_b.operation();
+        concreteDecorator_b.operation();*/
+        concreteDecorator_a.setComponent(concreteDecorator_b);
+        concreteDecorator_b.setComponent(concreteComponent);
+        concreteDecorator_a.operation();
     }
 }
