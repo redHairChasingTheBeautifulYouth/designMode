@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Subject {
-
+    //抽象观察者依赖抽象通知者
     private List<Observer> observers = new ArrayList<>();
 
     public void addObserver(Observer observer){
