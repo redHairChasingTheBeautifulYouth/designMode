@@ -8,7 +8,7 @@ package observerMode.subjectImpl;
 
 import observerMode.Subject;
 
-public class ConcreteSubject extends Subject{
+public class ConcreteSubject extends Subject {
 
     //具体观察者状态
     private String subjectState;

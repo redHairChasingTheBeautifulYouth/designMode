@@ -7,5 +7,5 @@ package observerMode;
  */
 
 public interface Observer {
-    public abstract void update();
+    public void update();
 }

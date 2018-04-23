@@ -1,4 +1,5 @@
-package simpleFactoryMode;/*
+package simpleFactoryMode;
+/*
  *一句话描述该类作用:
  *@Author:
  *LB
