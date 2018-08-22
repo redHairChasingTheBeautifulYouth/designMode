@@ -9,6 +9,11 @@ package proxyMode.jdkProxy.main;
 import proxyMode.jdkProxy.IUserDao;
 import proxyMode.jdkProxy.ProxyFactory;
 import proxyMode.jdkProxy.userDaoImpl.UserDao;
+import sun.misc.ProxyGenerator;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class Test {
 
@@ -24,7 +29,26 @@ public class Test {
         System.out.println(proxy.getClass());
 
         // 执行方法   【代理对象】
-        proxy.save();
+        proxy.delete();
+
+        byte[] data = ProxyGenerator.generateProxyClass("$Proxy0" ,new Class[]{UserDao.class});
+        FileOutputStream fo = null;
+        try {
+             fo = new FileOutputStream("F:\\$Proxy.class");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            fo.write(data);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            fo.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 }

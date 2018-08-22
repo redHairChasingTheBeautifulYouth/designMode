@@ -8,5 +8,7 @@ package proxyMode.jdkProxy;
 
 public interface IUserDao {
 
-    public void save();
+    void save();
+
+    void delete();
 }
