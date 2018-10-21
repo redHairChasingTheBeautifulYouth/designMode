@@ -19,6 +19,7 @@ public class Test {
 
     public static void main(String[] arges) {
         try {
+            //生成代理类，加载到jvm中
             IUserDao IuserDao = (IUserDao) new Meipo().getInstance(new UserDao());
             IuserDao.delete();
         } catch (Exception e) {
